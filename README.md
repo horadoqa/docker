@@ -51,7 +51,7 @@ Common Commands:
   - [Dockerfile](./comandos/criar-dockerfile.md) - Criando um Dockerfile
   - [rm](./comandos/rm.md) - Removendo um container 
   - [rmi](./comandos/rmi.md) - Removendo uma imagem
-  - [stop](./comandos/stop.md)
+  - [stop](./comandos/stop.md) - Parando a execução de um container
 
 ## Recomendações
 
