@@ -10,6 +10,8 @@ Linguagem de programação: Go
 
 Possibilita criar imagens das aplicações e podem ser utilizadas tanto localmente quanto em kubernetes.
 
+![estrutura](./images/estrutura.png)
+
 ## Conceitos básicos de Imagens e Containers 
 
 Imagem - Sistema de arquivos para criar um container, uma aplicação.
