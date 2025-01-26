@@ -6,3 +6,6 @@ LABEL maintainer="horadoqa@gmail.com"
 
 # O comando COPY copia arquivos ou diretórios do sistema local (no caso, o diretório ./site) para o sistema de arquivos do contêiner. 
 COPY ./site /usr/share/nginx/html/
+
+# Informa ao Docker que a aplicação vai escutar na porta 80
+EXPOSE 80

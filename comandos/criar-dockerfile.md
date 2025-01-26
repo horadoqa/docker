@@ -1,13 +1,12 @@
 # Criando um Dockerfile
 
+O objetivo de criar um Dockerfile é definir as instruções para a construção de uma imagem Docker. Em outras palavras, o Dockerfile descreve o ambiente e os passos necessários para construir uma aplicação que será executada dentro de um contêiner. Ele contém comandos que permitem automatizar o processo de configuração do contêiner, como instalar dependências, copiar arquivos, definir variáveis de ambiente e especificar o comando que deve ser executado quando o contêiner for iniciado.
+
+Exemplo do `Dockerfile`
+
 ```bash
 FROM nginx
-
 LABEL maintainer="horadoqa@gmail.com"
-  
-COPY ./site /usr/share/nginx/html/
-
-# Expôr a porta 80 (padrão do Nginx)
 EXPOSE 80
 ```
 
@@ -50,3 +49,5 @@ No caso acima estamos tentando excluir um container que está em execução, rec
 ```bash
 docker rm -f cfa
 ```
+
+[Próximo passo...Enviar a imagem criada para o Docker Hub](push.md)
