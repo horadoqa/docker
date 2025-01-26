@@ -5,4 +5,7 @@
 3. Fazer o login
     - No Windows via browser
     - No CLI com o comando `docker login` 
-4. 
+4. Verificar a versão instalada
+    ```bash
+    docker --version
+    ```
