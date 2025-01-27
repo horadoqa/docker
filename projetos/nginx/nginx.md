@@ -113,10 +113,10 @@ docker rm meu-nginx
 
 ## 5. Exemplo de Comando Completo
 
-Se você tiver seus arquivos HTML em um diretório local, como `/home/rfahham/projetos/docker/projetos/nginx/site`, pode executar o Nginx com o seguinte comando:
+Se você tiver seus arquivos HTML em um diretório local, como `/home/rfahham/projetos/docker/projetos/nginx/site/v1`, pode executar o Nginx com o seguinte comando:
 
 ```bash
-docker run --name meu-nginx -p 8080:80 -v /home/rfahham/projetos/docker/projetos/nginx/site:/usr/share/nginx/html -d nginx
+docker run --name meu-nginx -p 8080:80 -v /home/rfahham/projetos/docker/projetos/nginx/site/v1:/usr/share/nginx/html -d nginx
 ```
 
 Isso irá mapear o diretório local `site` para o diretório do Nginx, permitindo que você personalize o conteúdo da página.

@@ -15,13 +15,13 @@ EXPOSE 80
 1. Criar a imagem a partir do Dockerfile (no mesmo diretório onde o Dockerfile está localizado):
 
 ```bash
-docker build -t meu-nginx .
+docker build -t site-horadoqa .
 ```
 
 2. Executar o contêiner a partir da imagem gerada (com o mapeamento de volume local):
 
 ```bash
-docker run --name meu-nginx -p 8080:80 -d meu-nginx
+docker run --name site-horadoqa -p 8080:80 -d site-horadoqa
 ```
 
 3. Verificando o container criado com o Dockerfile
@@ -29,7 +29,7 @@ docker run --name meu-nginx -p 8080:80 -d meu-nginx
 docker ps
 
 CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                  NAMES
-cfab89fb98de   meu-nginx   "/docker-entrypoint.…"   4 seconds ago   Up 3 seconds   0.0.0.0:8080->80/tcp   meu-nginx
+cfab89fb98de   site-horadoqa   "/docker-entrypoint.…"   4 seconds ago   Up 3 seconds   0.0.0.0:8080->80/tcp   meu-nginx
 ```
 
 4. Abrir o site no browser no seguinte endereço: http://localhost:8080/
