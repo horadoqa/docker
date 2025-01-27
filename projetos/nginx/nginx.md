@@ -1,5 +1,13 @@
 # NGINX com Docker
 
+**O que é NGINX ?**
+
+O Nginx é um servidor web de código aberto e também pode atuar como proxy reverso, balanceador de carga, e servidor de cache. Ele é conhecido por sua alta performance, escalabilidade e eficiência no uso de recursos. Foi criado para lidar com grandes volumes de tráfego e é amplamente utilizado para servir sites e aplicativos web de maneira rápida e confiável.
+
+Ele é particularmente eficiente em lidar com conexões simultâneas, o que o torna uma opção popular para ambientes de alto tráfego. Muitas vezes, o Nginx é usado em conjunto com outros servidores, como o Apache, para melhorar a performance ou gerenciar o tráfego de forma mais eficiente.
+
+Além de ser usado como servidor web, o Nginx também pode ser configurado como um proxy reverso, encaminhando solicitações de clientes para outros servidores, como servidores de aplicação. Isso ajuda a melhorar a segurança e o desempenho de sistemas distribuídos.
+
 Neste guia, você aprenderá como executar o Nginx em um contêiner Docker, incluindo como configurar o conteúdo da aplicação e gerenciar o contêiner.
 
 ---
@@ -33,6 +41,12 @@ docker pull nginx
 ```
 
 Após o download, verifique a imagem baixada com o comando `docker images`:
+
+```bash
+docker images
+```
+
+O resultado será:
 
 ```bash
 REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
@@ -107,6 +121,12 @@ Se desejar excluir o contêiner, use o comando:
 
 ```bash
 docker rm meu-nginx
+```
+
+Existe a possibilidade de excluir o `CONTAINER` sem precisar parar ele anteriormente, usando o parâmetro `-f`
+
+```bash
+docker rm -f meu-nginx
 ```
 
 ---
