@@ -25,5 +25,7 @@ Isso listará todas as imagens disponíveis localmente no seu sistema. Você dev
 ### Passo 3: Rodar a imagem
 
 ```bash
-docker run --name site-horadoqa-v2 -p 8080:80 -d site-horadoqa-v2
+docker run -d --name site-horadoqa -p 8080:80 horadoqa/site-horadoqa:v2
 ```
+
+Abrir no browser [http://localhost:8080](http://localhost:8080)
