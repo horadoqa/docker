@@ -5,18 +5,16 @@ No Dockerfile tem toda a instrução para criar uma imagem com o playwright Fram
 ## Criando a imagem (Build) 
 
 ```bash
-docker build -t playwright:v1 .
+docker build -t playwright .
 ```
 
 ## Listando as imagens
 
 ```bash
 docker images
-REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
-playwright        v1       c294d34b5d27   31 seconds ago   492MB
 ```
 
-## Tagueadno a imagem
+## Tagueando a imagem
 
 ```bash
 docker tag playwright horadoqa/playwright:v1
@@ -38,6 +36,14 @@ docker pull horadoqa/playwright:v1
 
 ```bash
 docker run -it horadoqa/playwright:v1 /bin/bash
+```
+
+## Executando o script de teste
+
+```bash
+python horadoqa.py
+
+Título da página: Hora do QA
 ```
 
 ## Verificando Containers em Execução

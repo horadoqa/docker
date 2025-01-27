@@ -1,6 +1,6 @@
 # Criando um container com ROBOT
 
-No Dockerfile tem toda a instrução para criar uma imagem com o ROBOT Framework
+No [Dockerfile](./Dockerfile) tem toda a instrução para criar uma imagem com o ROBOT Framework
 
 ## Criando a imagem (Build) 
 
@@ -12,8 +12,8 @@ docker build -t robot:v1 .
 
 ```bash
 docker images
-REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
-robot        v1       c294d34b5d27   31 seconds ago   492MB
+REPOSITORY   TAG       IMAGE ID       CREATED              SIZE
+robot        v1        b0295aa38080   About a minute ago   923MB
 ```
 
 ## Tagueadno a imagem

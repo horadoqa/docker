@@ -1,7 +1,7 @@
 /* Estilo geral da página */
 body {
     font-family: 'Arial', sans-serif; /* Fonte mais moderna */
-    background-color: #f4f4f9; /* Cor de fundo suave */
+    background-color: rgb(29, 31, 32);
     color: #2c3e50; /* Cor do texto */
     display: flex;
     flex-direction: column; /* Organiza o conteúdo verticalmente */
