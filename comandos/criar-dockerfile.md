@@ -118,6 +118,8 @@ Após verificar que a versão 1 do contêiner está funcionando corretamente, vo
 docker rm -f <ID do CONTAINER>
 ```
 
+Podemos executar os 3 sites ao mesmo tempo. Para isso precisaremos mudar as portas. [Exemplo](../projetos/nginx/sites.md)
+
 ---
 
 [Próximo passo...Enviar a imagem criada para o Docker Hub](push.md)

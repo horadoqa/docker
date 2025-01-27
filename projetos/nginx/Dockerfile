@@ -5,7 +5,7 @@ FROM nginx
 LABEL maintainer="horadoqa@gmail.com"
 
 #Copia o conteúdo da pasta v1 para o CONTAINER
-COPY ./site/v1 /usr/share/nginx/html/
+COPY ./site/v2 /usr/share/nginx/html/
 
 # Informa ao Docker que a aplicação vai escutar na porta 80
 EXPOSE 80

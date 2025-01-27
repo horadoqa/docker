@@ -34,7 +34,9 @@ Caso não haja nenhuma imagem, o repositório estará vazio.
 
 ### 2.1. Baixando a Imagem do Nginx
 
-Para começar, baixe a imagem oficial do Nginx a partir do Docker Hub:
+Para começar, baixe a imagem oficial do Nginx a partir do Docker Hub.
+
+Para saber mais sobre o comando: [docker pull](../../comandos/pull.md)
 
 ```bash
 docker pull nginx

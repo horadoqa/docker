@@ -23,7 +23,8 @@ Antes de enviar a imagem, você precisa garantir que ela tenha o nome correto. O
 Por exemplo, se seu nome de usuário no Docker Hub for `meuusuario` e você quiser enviar a imagem chamada `minhaimagem` com a tag `v1`, o comando seria:
 
 ```bash
-docker tag site-horadoqa horadoqa/site-horadoqa:v1
+docker tag site-horadoqa-v1 horadoqa/site-horadoqa:v1
+docker tag site-horadoqa-v2 horadoqa/site-horadoqa:v2
 ```
 
 ### 3. **Envie a imagem para o Docker Hub:**
@@ -34,6 +35,10 @@ Agora, você pode enviar a imagem usando o comando `docker push`:
 docker push horadoqa/site-horadoqa:v1
 ```
 
+```bash
+docker push horadoqa/site-horadoqa:v2
+```
+
 Isso fará o upload da sua imagem para o repositório `horadoqa/site-horadoqa` com a tag `v1` no Docker Hub.
 
 ### Resumo do fluxo:
@@ -42,5 +47,3 @@ Isso fará o upload da sua imagem para o repositório `horadoqa/site-horadoqa` c
 3. Envie a imagem: `docker push horadoqa/site-horadoqa:v1`
 
 Depois de enviado, sua imagem estará disponível no seu Docker Hub, e você poderá compartilhá-la com outros ou usá-la em diferentes ambientes.
-
-Próximo passo... Criar a imagem `site-horadoqa:v1`
