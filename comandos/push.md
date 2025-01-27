@@ -24,6 +24,9 @@ Por exemplo, se seu nome de usuário no Docker Hub for `meuusuario` e você quis
 
 ```bash
 docker tag site-horadoqa-v1 horadoqa/site-horadoqa:v1
+```
+
+```bash
 docker tag site-horadoqa-v2 horadoqa/site-horadoqa:v2
 ```
 
